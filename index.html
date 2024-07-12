@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets//images/m-icon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-container">
+    <div id="progress">
+      <span id="progress-value"><i class="fa-solid fa-arrow-up" style="color: #8750f7;"></i></i></span>
+    </div>
+    
+    <nav class="navbar" >
+      <div class="nav-left-side">
+        <img width="100px" src="assets/images/m-icon.png" alt="" />
+        <p>miriyeva.mira05@gmail.com</p>
+      </div>
+      <div class="nav-right-side">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#testimonials">Testimonial</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="responsive-nav">
+      <div class="nav-left-side">
+        <img width="100px" src="assets/images/m-icon.png" alt="" />
+        <p>miriyeva.mira05@gmail.com</p>
+      </div>
+
+      <svg>
+        <defs>
+          <filter id="gooeyness">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="2.2" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10" result="gooeyness" />
+            <feComposite in="SourceGraphic" in2="gooeyness" operator="atop" />
+          </filter>
+        </defs>
+      </svg>
+      <div  class="plates">
+        
+        <div class="plate plate2" onclick="this.classList.toggle('active')">
+          <svg onclick="toggleModal()" class="burger" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+            <path class="line line1" d="M 50,65 H 70 C 70,65 75,65.198488 75,70.762712 C 75,73.779026 74.368822,78.389831 66.525424,78.389831 C 22.092231,78.389831 -18.644068,-30.508475 -18.644068,-30.508475" />
+            <path class="line line2" d="M 50,35 H 70 C 70,35 81.355932,35.300135 81.355932,25.635593 C 81.355932,20.906215 78.841706,14.830508 72.881356,14.830508 C 35.648232,14.830508 -30.508475,84.322034 -30.508475,84.322034" />
+            <path class="line line3" d="M 50,50 H 30 C 30,50 12.288136,47.749959 12.288136,60.169492 C 12.288136,67.738339 16.712974,73.305085 40.677966,73.305085 C 73.791674,73.305085 108.47458,-19.915254 108.47458,-19.915254" />
+            <path class="line line4" d="M 50,50 H 70 C 70,50 81.779661,50.277128 81.779661,36.607372 C 81.779661,28.952694 77.941689,25 69.067797,25 C 39.95532,25 -16.949153,119.91525 -16.949153,119.91525" />
+            <path class="line line5" d="M 50,65 H 30 C 30,65 17.79661,64.618439 17.79661,74.152543 C 17.79661,80.667556 25.093813,81.355932 38.559322,81.355932 C 89.504001,81.355932 135.59322,-21.186441 135.59322,-21.186441" />
+            <path class="line line6" d="M 50,35 H 30 C 30,35 16.525424,35.528154 16.525424,24.152542 C 16.525424,17.535987 22.597755,13.559322 39.40678,13.559322 C 80.617882,13.559322 94.067797,111.01695 94.067797,111.01695" />
+          </svg>
+          <svg  onclick="toggleModal()"  class="x" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+            <path class="line" d="M 34,32 L 66,68" />
+            <path class="line" d="M 66,32 L 34,68" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div id="myModal" class="modal">
+        <ul>
+          <li ><a onclick="linkClick()" href="#about">About</a></li>
+          <li><a onclick="linkClick()" href="#portfolio">Portfolio</a></li>
+          <li><a onclick="linkClick()" href="#resume">Resume</a></li>
+          <li><a onclick="linkClick()" href="#skills">Skills</a></li>
+          <li><a onclick="linkClick()" href="#testimonials">Testimonial</a></li>
+          <li><a onclick="linkClick()" href="#contact">Contact</a></li>
+      
+        </ul>
+    
+    
+    </div>
+    <!-- <div class="intro-text">
+        <svg viewBox="0 0 1320 300">
+            <text x="50%" y="50%" text-anchor="middle" class="animate-stroke">HI</text>
+        </svg>
+    </div> -->
+    <div class="light-effect "></div>
+    <section id="about" class="fade-in">
+      <div id="about-left-side">
+        <div class="typing-container">
+          <span id="static-text">I am </span> <br />
+          <span id="dynamic-text"></span>
+        </div>
+        <p>
+          I love creating modern, user-friendly, and aesthetically pleasing
+          websites. I possess both technical knowledge and a creative
+          perspective, which allows me to add value to my projects
+        </p>
+        <div class="buttons">
+          <ul>
+            <li>
+              <a
+                href="./assets/images/Mirana Miriyeva Frontend Developer(en).pdf"
+                download
+                class="download-cv"
+              >
+                Download CV
+                <svg
+                  class="download-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#8750f7"
+                >
+                  <path
+                    d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"
+                  /></svg></a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/miran%C9%99-miriyeva/"
+              >
+                <i class="fab fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://github.com/MiranaMiriyeva">
+                <i class="fab fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.upwork.com/freelancers/~01c3cf80ef3895d1c1"
+                ><i class="fa-brands fa-upwork"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <img class="my-image" src="assets/images/portfolio-image.jpg" alt="" />
+      </div>
+      <p class="background-text"></p>
+     
+    </section>
+    <section class="fun-facts" class="fade-in">
+      <div>
+        <span class="counter" data-target="2">0</span>
+        <p>Years Of Experience</p>
+      </div>
+      <div>
+        <span class="counter" data-target="20">0</span>
+        <span>+</span>
+        <p>Projects</p>
+      </div>
+      <div>
+        <span class="counter" data-target="60">0 </span>
+        <span>k+</span>
+        <p>Lines of Code</p>
+      </div>
+      <div>
+        <span class="counter" data-target="100">0</span>
+        <span>%</span>
+        <p>Satisfaction Guarantee</p>
+      </div>
+    </section>
+    <!-- My Projects -->
+    <section class="my-projects fade-in" id="portfolio">
+      <h1>My Projects</h1>
+      <p>
+        I put your ideas and thus your wishes in the form of a unique web
+        project that inspires you and you customers.
+      </p>
+      <div class="projects-container">
+        <div class="project-boxs">
+          <img src="./assets/images/icon-k-l.png" alt="" />
+          <button class="image-detail">
+                <h2>ICON Karaoke & Lounge</h2>
+                <div>
+                  <i class="fa-solid fa-hashtag" style="color: #8750f7;"></i>
+                <strong>Purpose:</strong>   Client Work
+                </div>
+                <div>
+                  <i class="fa-regular fa-hourglass" style="color: #8750f7;"></i>
+                 <strong>Duration:</strong>  a month
+                </div>
+                <div>
+                  <i class="fa-solid fa-code" style="color: #8750f7;"></i>
+                  <strong>Technologies:</strong> HTML5, CSS, React.js, Redux, Responsive Design
+                </div>
+                <div>
+                  <i class="fa-solid fa-dollar-sign" style="color: #8750f7;"></i>
+                <strong>Budget: </strong>  
+                
+                </div>
+                  <a class="preview" target="_blank" href="">Live Preview  
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="18px"
+                    viewBox="0 -960 960 960"
+                    width="18px"
+                    fill="#fff"
+                  >
+                    <path
+                      d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"
+                    />
+                  </svg> </a>
+                
+              </button>
+          </button>
+        </div>
+        <div class="project-boxs">
+          <img src="./assets/images/petruccio.png" alt="" />
+          <button class="image-detail">
+                <h2>Petruccio</h2>
+                <div>
+                  <i class="fa-solid fa-hashtag" style="color: #8750f7;"></i>
+                <strong>Purpose:</strong>   Course Final Project
+                </div>
+                <div>
+                  <i class="fa-regular fa-hourglass" style="color: #8750f7;"></i>
+                 <strong>Duration:</strong>  3 weeks
+                </div>
+                <div>
+                  <i class="fa-solid fa-code" style="color: #8750f7;"></i>
+                  <strong>Technologies:</strong> HTML5, CSS, React.js, Redux, Responsive Design
+                </div>
+          
+                
+                  <a class="preview" target="_blank" href="https://petruccio.vercel.app/">Live Preview
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="18px"
+                    viewBox="0 -960 960 960"
+                    width="18px"
+                    fill="#fff"
+                  >
+                    <path
+                      d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"
+                    />
+                  </svg>
+                  </a>
+             
+                
+       
+              </button>
+          </button>
+        
+        </div>
+
+       
+    </section>
+    <!-- Resume -->
+    <section id="resume" class="fade-in">
+        <div>
+            <i class="fa-solid fa-briefcase" style="color: #8750f7;"></i>   <h2>My Experience</h2>
+            <div class="box">
+                <p class="resume-date">2024.05 - present</p>
+                <p class="resume-title">Frontend Developer</p>
+                <p class="resume-location">ITB Techno</p>
+            </div>
+        </div>
+        <div>
+            <i class="fa-solid fa-graduation-cap" style="color: #8750f7;"></i>  <h2>My Education</h2>
+            <div class="box">
+                <p class="resume-date">2022 - present</p>
+                <p class="resume-title">Computer Science <span>(bachelor's degree)</span></p>
+                <p class="resume-location">Baku State University</p>
+            </div>
+            <div class="box">
+                <p class="resume-date">2024.05 - present</p>
+                <p class="resume-title">Fullstack Development Course</p>
+                <p class="resume-location">Rever Academy</p>
+            </div>
+            <div class="box">
+                <p class="resume-date">2023.06 - 2023.12</p>
+                <p class="resume-title">Frontend Development Course</p>
+                <p class="resume-location">IT Brains Academy</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROGRESS BAR -->
+     <section id="skills" class="fade-in">
+        <h1 id="my-skills">My Skills</h1>
+        <div class="skills-container">
+    <div class="progress-bar" data-percentage="100%">
+        <h4 class="progress-title-holder">
+          <span class="progress-title">HTML</span>
+          <span class="progress-number-wrapper">
+            <span class="progress-number-mark">
+              <span class="percent"></span>
+              <span class="down-arrow"></span>
+            </span>
+          </span>
+        </h4>
+        <div class="progress-content-outter">
+          <div class="progress-content"></div>
+        </div>
+      </div> 
+      <div class="progress-bar" data-percentage="95%">
+        <h4 class="progress-title-holder clearfix">
+          <span class="progress-title">Javascript</span>
+          <span class="progress-number-wrapper">
+            <span class="progress-number-mark">
+              <span class="percent"></span>
+              <span class="down-arrow"></span>
+            </span>
+          </span>
+        </h4>
+        <div class="progress-content-outter">
+          <div class="progress-content"></div>
+        </div>
+      </div>
+      <div class="progress-bar" data-percentage="100%">
+        <h4 class="progress-title-holder">
+          <span class="progress-title">CSS/SCSS</span>
+          <span class="progress-number-wrapper">
+            <span class="progress-number-mark">
+              <span class="percent"></span>
+              <span class="down-arrow"></span>
+            </span>
+          </span>
+        </h4>
+        <div class="progress-content-outter">
+          <div class="progress-content"></div>
+        </div>
+      </div> 
+      <div class="progress-bar" data-percentage="90%">
+        <h4 class="progress-title-holder clearfix">
+          <span class="progress-title">React</span>
+          <span class="progress-number-wrapper">
+            <span class="progress-number-mark">
+              <span class="percent"></span>
+              <span class="down-arrow"></span>
+            </span>
+          </span>
+        </h4>
+        <div class="progress-content-outter">
+          <div class="progress-content"></div>
+        </div>
+      </div> 
+     
+      <div class="progress-bar" data-percentage="85%">
+        <h4 class="progress-title-holder clearfix">
+          <span class="progress-title">Responsive Design</span>
+          <span class="progress-number-wrapper">
+            <span class="progress-number-mark">
+              <span class="percent"></span>
+              <span class="down-arrow"></span>
+            </span>
+          </span>
+        </h4>
+        <div class="progress-content-outter">
+          <div class="progress-content"></div>
+        </div>
+      </div>
+
+
+      <div class="progress-bar" data-percentage="90%">
+        <h4 class="progress-title-holder clearfix">
+          <span class="progress-title">Git</span>
+          <span class="progress-number-wrapper">
+            <span class="progress-number-mark">
+              <span class="percent"></span>
+              <span class="down-arrow"></span>
+            </span>
+          </span>
+        </h4>
+        <div class="progress-content-outter">
+          <div class="progress-content"></div>
+        </div>
+      </div> 
+    </div>
+<!-- Language -->
+<div class="language-container">
+
+    <div class="language">
+    <h1>Turkish</h1>
+    <div id="turkish" class="language-progress">
+        <span class="title timer" data-from="0" data-to="100" data-speed="1800">100</span>
+        <div class="overlay"></div>
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    </div>
+
+    <div class="language">
+    <h1>English</h1>
+    <div  id="english"  class="language-progress">
+        <span class="title timer" data-from="0" data-to="80" data-speed="1500">85</span>
+        <div class="overlay"></div>
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    </div>
+
+    <div  class="language">
+    <h1 id="korean-h1">Korean</h1>
+    <div id="korean" class="language-progress">
+        <span class="title timer" data-from="0" data-to="55" data-speed="1500">55</span>
+        <div class="overlay"></div>
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    </div>
+    <div class="skills-light-effect"></div>
+</div>
+</section>
+     
+     <section id="testimonials" class="fade-in">
+        <div class="swiper mySwiper">
+            <h1>TESTIMONIALS</h1>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <p class="author-text">"When I have some problem I contact with the Marketify support and the explanations, videos and documentation of the personal it's perfect to understand the error and solve the problem. Thanks a lot!".</p>
+                <hr>
+                <div>
+                    <img src="https://marketifythemes.net/wp/istanbul/1/wp-content/uploads/2024/05/3.jpg" alt="">
+                    <div class="about-author">
+                        <p class="author">Nelly Steve1</p>
+                        <p class="author-job">Web Developer</p>
+                       </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <p class="author-text">"When I have some problem I contact with the Marketify support and the explanations, videos and documentation of the personal it's perfect to understand the error and solve the problem. Thanks a lot!"</p>
+                <hr>
+                <div>
+                    <img src="https://marketifythemes.net/wp/istanbul/1/wp-content/uploads/2024/05/3.jpg" alt="">
+                    <div class="about-author">
+                        <p class="author">Nelly Steve2</p>
+                        <p class="author-job">Web Developer</p>
+                       </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <p class="author-text">"When I have some problem I contact with the Marketify support and the explanations, videos and documentation of the personal it's perfect to understand the error and solve the problem. Thanks a lot!"</p>
+                <hr>
+                <div>
+                    <img src="https://marketifythemes.net/wp/istanbul/1/wp-content/uploads/2024/05/3.jpg" alt="">
+                    <div class="about-author">
+                        <p class="author">Nelly Steve3</p>
+                        <p class="author-job">Web Developer</p>
+                       </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <p class="author-text">"When I have some problem I contact with the Marketify support and the explanations, videos and documentation of the personal it's perfect to understand the error and solve the problem. Thanks a lot!"</p>
+                <hr>
+                <div>
+                    <img src="https://marketifythemes.net/wp/istanbul/1/wp-content/uploads/2024/05/3.jpg" alt="">
+                   <div class="about-author">
+                    <p class="author">Nelly Steve4</p>
+                    <p class="author-job">Web Developer</p>
+                   </div>
+                   
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+     </section>
+     
+     <section id="contact" class="fade-in"> 
+      <div class="left-side">
+        <h1>Let’s work together!</h1>
+        <p>I design and code beautifully simple things and i love what i do. Just simple like that!</p>   
+        <form >
+          <div>
+              <input type="text" id="first-name" name="first-name" placeholder="First name" required>
+              
+              <input  type="text" id="last-name" name="last-name" placeholder="Last name" required>
+          </div>
+          <div>
+              <input   type="email" id="email" name="email" placeholder="Email address" required>
+              
+              <input type="tel" id="phone" name="phone" placeholder="Phone number" required>
+          </div>
+          <select id="contact-method"  required>
+            <option value="" disabled selected>Send message with</option>
+            <option value="whatsapp">WhatsApp</option>
+            <option value="email">Email</option>
+        </select>
+          <div>
+              <textarea id="message" name="message"  placeholder="Message"></textarea>
+          </div>
+          <button id="submit" type="submit" onclick="sendMessage()">Send Message</button>
+      </form>
+      
+       </div>
+      <div class="right-side">
+        <div class="contact-method">
+          <i class="fa-solid fa-phone-volume" style="color: #ffffff;"></i>
+          <div>
+            <p>Phone</p>
+            <a target="_blank" href="https://wa.me/994558152223?text=">+994 55 815 22 23</a>
+          </div>
+        </div>
+        <div class="contact-method">
+          <i class="fa-regular fa-envelope" style="color: #ffffff;"></i>
+          <div>
+            <p>Email</p>
+            <a href="mailto:miriyeva.mira05@gmail.com?subject=Contact%20Form%20Submission&body=">miriyeva.mira05@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-method">
+          <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+          <div>
+            <p>Adress</p>
+            <a href="https://www.google.com/maps/place/Baku/@40.3944755,49.6901503,11z/data=!3m1!4b1!4m6!3m5!1s0x40307d6bd6211cf9:0x343f6b5e7ae56c6b!8m2!3d40.4092617!4d49.8670924!16zL20vMDFnZjU?entry=ttu" target="_blank">Baku city,Azerbaijan</a>
+          </div>
+        </div>
+      </div>
+     </section>
+
+     <footer class="fade-in">
+      <img src="./assets/images/m-icon.png" alt="icon">
+     </footer>
+  <div class="animated-intro">
+    <div class="modal-top">
+      Mirana
+     </div>
+     <div class="loader-line"></div>
+     <div class="modal-bottom">
+      Miriyeva
+     </div>
+  </div>
+  
+</div>
+
+   
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/assets/js/jquerry.js"></script>
+  </body>
+</html>
