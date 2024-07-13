@@ -155,14 +155,19 @@ a {
   border: 2px solid #8750f7;
   padding: 8px 10px 1px;
   border-radius: 50px;
+
+ 
 }
 #about-left-side li i {
   color: #8750f7;
+
+
 }
 #about-left-side .buttons ul {
   margin-top: 50px;
   display: flex;
   gap: 20px;
+
 }
 #about-left-side p {
   line-height: 30px;
