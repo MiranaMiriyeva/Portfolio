@@ -1124,7 +1124,7 @@ footer img {
 }
 @keyframes lineDisplay {
   100% {
-    display: none;
+    opacity:0 ;
   }
 }
 
@@ -1173,7 +1173,7 @@ footer img {
   z-index: 999999999;
   top: 48vh;
   left: 0%;
-  animation: lineDisplay 1s 2s ease-in;
+  animation: lineDisplay 1s 2s ease-in-out forwards;
 }
 
 .loader-line:before {
