@@ -1173,7 +1173,7 @@ footer img {
   z-index: 999999999;
   top: 48vh;
   left: 0%;
-  animation: lineDisplay 1s 2s forwards;
+  animation: lineDisplay 1s 2s ease-in;
 }
 
 .loader-line:before {
