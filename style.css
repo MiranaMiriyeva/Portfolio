@@ -291,7 +291,7 @@ a {
 }
 .project-boxs {
   position: relative;
-  width: 550px;
+  width: 580px;
   height: 400px;
   overflow: hidden;
 
@@ -309,6 +309,7 @@ a {
   height: 100%;
   border-radius: 20px;
   transition: opacity 0.3s ease;
+  object-fit: fill;
 }
 
 .project-boxs .image-detail {
@@ -806,7 +807,7 @@ hr {
   flex-direction: column;
   justify-content: start;
   gap: 10px;
-  margin: 20px;
+  margin: 10px 20px;
 }
 .author {
   color: #8750f7;
@@ -814,6 +815,8 @@ hr {
 }
 .author-job {
   font-size: 14px;
+  text-align: start;
+  margin-left: 5px;
 }
 .swiper-pagination {
   display: flex;
@@ -1404,7 +1407,7 @@ footer img {
   .project-boxs {
     width: 100%;
     max-width: 400px;
-    height: 300px;
+    height: 250px;
   }
 
   .projects-container {
@@ -1525,7 +1528,7 @@ footer img {
 
   .project-boxs {
     width: 320px;
-    height: 280px;
+    height: 250px;
     margin-left: 15px;
   }
 
@@ -1633,6 +1636,16 @@ footer img {
   #contact textarea {
     width: 300px;
   }
+  .author {
+   
+    font-size: 17px;
+  }
+  .author-job {
+    font-size: 12px;
+  }
+  .author-text {
+    font-size: 14px;
+  }
 }
 @media (max-width: 340px) {
   .left-side {
@@ -1649,7 +1662,7 @@ footer img {
   }
   .project-boxs {
     width: 300px;
-    height: 280px;
+    height: 250px;
     margin-left: 1px;
   }
   .projects-container {
