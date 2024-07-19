@@ -760,7 +760,7 @@ a {
   }
 }
 .swiper-slide {
-  height: 280px;
+  height: 300px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -776,6 +776,9 @@ a {
   .author-text {
     text-shadow: 1px 1px 8px #8750f7;
   }
+}
+.swiper-slide div{
+  max-height: 100px;
 }
 .author-text {
   color: #ccc;
@@ -814,7 +817,7 @@ hr {
   font-size: 20px;
 }
 .author-job {
-  font-size: 14px;
+  font-size: 12px;
   text-align: start;
   margin-left: 5px;
 }
@@ -1215,6 +1218,9 @@ footer img {
   .navbar {
     display: none;
   }
+  .author{
+    font-size: 16px;
+  }
   .light-effect:before {
     display: none;
   }
@@ -1343,7 +1349,8 @@ footer img {
     margin: 50px 0 0 0;
   }
   .swiper-slide {
-    height: 275px;
+    height: 280px;
+    padding-top: 50px;
     width: 340px !important;
   }
   .swiper {
@@ -1580,7 +1587,8 @@ footer img {
     top: -50px;
   }
   .swiper-slide {
-    height: 275px;
+    height: 280px;
+    padding-top: 50px;
     width: 340px !important;
     margin-left: 20px;
   }
