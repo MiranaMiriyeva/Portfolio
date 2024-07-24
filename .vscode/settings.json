@@ -1,3 +1,20 @@
 {
-  "liveServer.settings.port": 5502
+  "liveServer.settings.port": 5502,
+  "workbench.colorCustomizations": {
+    "commandCenter.border": "#e7e7e799",
+    "editorError.foreground": "#000000ff",
+    "editorGroup.border": "#ab307e",
+    "editorInfo.foreground": "#000000ff",
+    "editorWarning.foreground": "#000000ff",
+    "panel.border": "#ab307e",
+    "sash.hoverBorder": "#ab307e",
+    "sideBar.border": "#ab307e",
+    "tab.activeBorder": "#ab307e",
+    "titleBar.activeBackground": "#832561",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.border": "#832561",
+    "titleBar.inactiveBackground": "#83256199",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.color": "#832561"
 }

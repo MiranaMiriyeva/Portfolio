@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /portfolio/
+Allow: /cv/
+Sitemap: https://mirana-miriyeva.vercel.app

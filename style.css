@@ -320,7 +320,7 @@ a {
   height: 100%;
   border-radius: 20px;
   background: linear-gradient(90deg, #000 30%, #2a1454 100%);
-  /* background-color: #000; */
+
   opacity: 0;
   transition: opacity 0.3s ease, top 0.3s ease;
   border: none;
